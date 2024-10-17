@@ -1,0 +1,51 @@
+Return_ID,Order_ID,Product_ID,Return_Date,Reason,Return_Status,Refund_Amount
+1,4,2,6/12/2024,Defective,Approved,799.99
+2,10,5,7/09/2024,Not as Described,Refunded,49.99
+3,16,7,12/12/2024,Changed Mind,Pending,149.99
+4,20,12,7/12/2024,Damaged,Approved,199.99
+5,26,15,8/09/2024,Size Issue,Refunded,299.99
+6,36,18,8/12/2024,Defective,Pending,299.99
+7,30,25,23/09/2024,Changed Mind,Approved,19.99
+8,40,30,13/11/2024,Not as Described,Refunded,89.99
+9,44,34,29/11/2024,Damaged,Approved,49.99
+10,50,38,12/10/2024,Defective,Refunded,149.99
+11,4,3,7/12/2024,Defective,Approved,499.99
+12,10,5,9/09/2024,Changed Mind,Refunded,49.99
+13,16,9,13/12/2024,Not as Described,Pending,1599.99
+14,20,11,8/12/2024,Damaged,Approved,89.99
+15,26,13,11/09/2024,Size Issue,Refunded,59.99
+16,36,17,9/12/2024,Defective,Pending,19.99
+17,30,22,25/09/2024,Changed Mind,Approved,199.99
+18,40,28,15/11/2024,Not as Described,Refunded,499.99
+19,44,31,30/11/2024,Damaged,Approved,79.99
+20,50,36,14/10/2024,Defective,Refunded,39.99
+21,4,2,10/12/2024,Not as Described,Approved,799.99
+22,10,5,10/09/2024,Damaged,Refunded,49.99
+23,16,7,14/12/2024,Size Issue,Pending,149.99
+24,20,12,9/12/2024,Defective,Approved,199.99
+25,26,15,12/09/2024,Changed Mind,Refunded,299.99
+26,36,18,10/12/2024,Not as Described,Pending,299.99
+27,30,25,27/09/2024,Damaged,Approved,19.99
+28,40,30,16/11/2024,Size Issue,Refunded,89.99
+29,44,34,30/11/2024,Defective,Approved,49.99
+30,50,38,15/10/2024,Not as Described,Refunded,149.99
+31,4,3,12/12/2024,Changed Mind,Approved,499.99
+32,10,5,11/09/2024,Size Issue,Refunded,49.99
+33,16,9,15/12/2024,Defective,Pending,1599.99
+34,20,11,10/12/2024,Not as Described,Approved,89.99
+35,26,13,13/09/2024,Damaged,Refunded,59.99
+36,36,17,11/12/2024,Size Issue,Pending,19.99
+37,30,22,28/09/2024,Defective,Approved,199.99
+38,40,28,17/11/2024,Not as Described,Refunded,499.99
+39,44,31,1/12/2024,Damaged,Approved,79.99
+40,50,36,16/10/2024,Defective,Refunded,39.99
+41,4,2,11/12/2024,Not as Described,Approved,799.99
+42,10,5,12/09/2024,Damaged,Refunded,49.99
+43,16,7,16/12/2024,Size Issue,Pending,149.99
+44,20,12,11/12/2024,Defective,Approved,199.99
+45,26,15,14/09/2024,Changed Mind,Refunded,299.99
+46,36,18,12/12/2024,Not as Described,Pending,299.99
+47,30,25,29/09/2024,Damaged,Approved,19.99
+48,40,30,18/11/2024,Size Issue,Refunded,89.99
+49,44,34,2/12/2024,Defective,Approved,49.99
+50,50,38,17/10/2024,Not as Described,Refunded,149.99

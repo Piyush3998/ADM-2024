@@ -1,0 +1,44 @@
+Number 3 QUERIES::::
+1. Query 1: Find all customers who have placed an order.
+Description: This query retrieves all customers who have placed an order, along with their details and the orders they placed.
+
+Cypher Query:
+
+cypher
+
+MATCH (c:Customer)-[:PLACED]->(o:Order)
+RETURN c.First_Name, c.Last_Name, o.Order_ID, o.Order_Date, o.Order_Status;
+Result: This query will display the first name, last name of customers, and the details of the orders they have placed.
+
+2. Query 2: Find all orders and their corresponding shipping status.
+Description: This query retrieves each order along with its shipping details, showing how the orders are being processed or delivered.
+
+Cypher Query:
+
+cypher
+
+MATCH (o:Order)-[:HAS_SHIPPING]->(s:Shipping)
+RETURN o.Order_ID, o.Order_Date, o.Order_Status, s.Shipping_Method, s.Shipping_Status, s.Carrier_Name;
+Result: This will show the order details alongside the shipping method, shipping status, and carrier used for delivery.
+
+3. Query 3: Get the total revenue generated from all orders.
+Description: This query sums up the total amount of money generated from all the orders by multiplying the Unit_Price by Quantity in each order.
+
+Cypher Query:
+
+cypher
+
+MATCH (od:Order_Details)
+RETURN SUM(od.Unit_Price * od.Quantity) AS Total_Revenue;
+Result: This will give a single value representing the total revenue generated from all the orders in the system.
+
+4. Query 4: Find products that have been returned and the reasons for the return.
+Description: This query finds all products that have been returned by customers, along with the reason for the return and the refund amount.
+
+Cypher Query:
+
+cypher
+Copy code
+MATCH (o:Order)-[:HAS_RETURNED]->(r:Return)
+RETURN o.Order_ID, r.Return_Date, r.Reason, r.Refund_Amount;
+Result: This will list the product names, the dates they were returned, the reasons for the return, and the refund amounts provided.

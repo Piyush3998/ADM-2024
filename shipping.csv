@@ -1,0 +1,51 @@
+Shipping_ID,Order_ID,Shipping_Method,Shipping_Date,Estimated_Arrival_Date,Shipping_Status,Carrier_Name
+1,1,Standard,18/09/2024,25/09/2024,Delivered,DHL
+2,2,Express,13/10/2024,15/10/2024,In Transit,FedEx
+3,3,Standard,23/11/2024,30/11/2024,Processing,UPS
+4,4,Same Day,6/12/2024,6/12/2024,Delivered,USPS
+5,5,Standard,20/09/2024,27/09/2024,Delivered,DHL
+6,6,Express,23/11/2024,24/11/2024,In Transit,FedEx
+7,7,Standard,3/10/2024,10/10/2024,Delivered,UPS
+8,8,Overnight,12/11/2024,13/11/2024,Delivered,USPS
+9,9,Standard,17/12/2024,24/12/2024,Processing,DHL
+10,10,Same Day,6/09/2024,6/09/2024,Delivered,FedEx
+11,11,Standard,14/10/2024,21/10/2024,Delivered,UPS
+12,12,Express,27/11/2024,28/11/2024,In Transit,USPS
+13,13,Standard,3/12/2024,10/12/2024,Delivered,DHL
+14,14,Overnight,22/09/2024,23/09/2024,Delivered,FedEx
+15,15,Standard,7/11/2024,14/11/2024,Delivered,UPS
+16,16,Express,12/12/2024,13/12/2024,In Transit,USPS
+17,17,Standard,17/09/2024,24/09/2024,Delivered,DHL
+18,18,Same Day,12/10/2024,12/10/2024,Delivered,FedEx
+19,19,Standard,22/11/2024,29/11/2024,Processing,UPS
+20,20,Express,7/12/2024,8/12/2024,In Transit,USPS
+21,21,Standard,20/09/2024,27/09/2024,Delivered,DHL
+22,22,Overnight,24/11/2024,25/11/2024,Delivered,FedEx
+23,23,Standard,3/10/2024,10/10/2024,Delivered,UPS
+24,24,Express,12/11/2024,13/11/2024,Delivered,USPS
+25,25,Standard,17/12/2024,24/12/2024,Processing,DHL
+26,26,Same Day,7/09/2024,7/09/2024,Delivered,FedEx
+27,27,Standard,14/10/2024,21/10/2024,Delivered,UPS
+28,28,Express,27/11/2024,28/11/2024,In Transit,USPS
+29,29,Standard,4/12/2024,11/12/2024,Delivered,DHL
+30,30,Overnight,23/09/2024,24/09/2024,Delivered,FedEx
+31,31,Standard,8/11/2024,15/11/2024,Delivered,UPS
+32,32,Express,13/12/2024,14/12/2024,In Transit,USPS
+33,33,Standard,18/09/2024,25/09/2024,Delivered,DHL
+34,34,Same Day,13/10/2024,13/10/2024,Delivered,FedEx
+35,35,Standard,23/11/2024,30/11/2024,Processing,UPS
+36,36,Express,8/12/2024,9/12/2024,In Transit,USPS
+37,37,Standard,21/09/2024,28/09/2024,Delivered,DHL
+38,38,Overnight,25/11/2024,26/11/2024,Delivered,FedEx
+39,39,Standard,4/10/2024,11/10/2024,Delivered,UPS
+40,40,Express,13/11/2024,14/11/2024,Delivered,USPS
+41,41,Standard,18/12/2024,25/12/2024,Processing,DHL
+42,42,Same Day,8/09/2024,8/09/2024,Delivered,FedEx
+43,43,Standard,14/10/2024,21/10/2024,Delivered,UPS
+44,44,Express,28/11/2024,29/11/2024,In Transit,USPS
+45,45,Standard,5/12/2024,12/12/2024,Delivered,DHL
+46,46,Overnight,24/09/2024,25/09/2024,Delivered,FedEx
+47,47,Standard,9/11/2024,16/11/2024,Delivered,UPS
+48,48,Express,14/12/2024,15/12/2024,In Transit,USPS
+49,49,Standard,19/09/2024,26/09/2024,Delivered,DHL
+50,50,Same Day,11/10/2024,11/10/2024,Delivered,FedEx

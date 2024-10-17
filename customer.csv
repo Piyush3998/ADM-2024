@@ -1,0 +1,51 @@
+Customer_ID,First_Name,Last_Name,Email,Phone_Number,Gender,Street,City,State,Postal_Code,Customer_Type_ID,Join_Date
+1,John,Doe,john.doe1@example.com,1234567890,Male,123 Elm St,Los Angeles,CA,90001,1,1/01/2024
+2,Jane,Smith,jane.smith2@example.com,987654321,Female,456 Oak St,San Francisco,CA,94101,2,10/01/2024
+3,Alice,Johnson,alice.johnson3@example.com,5678901234,Female,789 Pine St,Sacramento,CA,94203,1,1/02/2024
+4,Bob,Williams,bob.williams4@example.com,2345678901,Male,101 Maple St,San Diego,CA,92101,2,15/02/2024
+5,Emma,Davis,emma.davis5@example.com,3456789012,Female,505 Oak St,Metropolis,CA,90002,1,1/03/2024
+6,David,Miller,david.miller6@example.com,4567890123,Male,606 Birch St,San Francisco,CA,94103,1,10/03/2024
+7,Sophia,Martinez,sophia.martinez7@example.com,5678901234,Female,707 Cedar St,Los Angeles,CA,90003,2,20/03/2024
+8,Oliver,Jones,oliver.jones8@example.com,6789012345,Male,808 Maple St,Sacramento,CA,94204,1,30/03/2024
+9,Mia,Brown,mia.brown9@example.com,7890123456,Female,909 Oak St,San Diego,CA,92102,2,5/04/2024
+10,Lucas,Wilson,lucas.wilson10@example.com,8901234567,Male,1010 Elm St,Metropolis,CA,90004,1,10/04/2024
+11,Amelia,Anderson,amelia.anderson11@example.com,9012345678,Female,1111 Pine St,San Francisco,CA,94105,2,15/04/2024
+12,Liam,Thomas,liam.thomas12@example.com,123456789,Male,1212 Cedar St,Los Angeles,CA,90005,1,20/04/2024
+13,Isabella,White,isabella.white13@example.com,1234567890,Female,1313 Birch St,Sacramento,CA,94205,2,25/04/2024
+14,James,Harris,james.harris14@example.com,2345678901,Male,1414 Maple St,San Diego,CA,92103,1,1/05/2024
+15,Emily,Clark,emily.clark15@example.com,3456789012,Female,1515 Oak St,Metropolis,CA,90006,2,5/05/2024
+16,Henry,Lewis,henry.lewis16@example.com,4567890123,Male,1616 Elm St,San Francisco,CA,94106,1,10/05/2024
+17,Charlotte,Walker,charlotte.walker17@example.com,5678901234,Female,1717 Pine St,Los Angeles,CA,90007,2,15/05/2024
+18,Alexander,Hall,alexander.hall18@example.com,6789012345,Male,1818 Cedar St,Sacramento,CA,94206,1,20/05/2024
+19,Olivia,Young,olivia.young19@example.com,7890123456,Female,1919 Birch St,San Diego,CA,92104,2,25/05/2024
+20,William,Allen,william.allen20@example.com,8901234567,Male,2020 Maple St,Metropolis,CA,90008,1,1/06/2024
+21,Ava,King,ava.king21@example.com,9012345678,Female,2121 Oak St,San Francisco,CA,94107,2,5/06/2024
+22,Benjamin,Wright,benjamin.wright22@example.com,123456789,Male,2222 Elm St,Los Angeles,CA,90009,1,10/06/2024
+23,Mason,Scott,mason.scott23@example.com,1234567890,Male,2323 Pine St,Sacramento,CA,94207,2,15/06/2024
+24,Ella,Green,ella.green24@example.com,2345678901,Female,2424 Cedar St,San Diego,CA,92105,1,20/06/2024
+25,Jacob,Adams,jacob.adams25@example.com,3456789012,Male,2525 Birch St,Metropolis,CA,90010,2,25/06/2024
+26,Sofia,Baker,sofia.baker26@example.com,4567890123,Female,2626 Maple St,San Francisco,CA,94108,1,1/07/2024
+27,Michael,Gonzalez,michael.gonzalez27@example.com,5678901234,Male,2727 Oak St,Los Angeles,CA,90011,2,5/07/2024
+28,Abigail,Nelson,abigail.nelson28@example.com,6789012345,Female,2828 Elm St,Sacramento,CA,94208,1,10/07/2024
+29,Daniel,Carter,daniel.carter29@example.com,7890123456,Male,2929 Pine St,San Diego,CA,92106,2,15/07/2024
+30,Mila,Mitchell,mila.mitchell30@example.com,8901234567,Female,3030 Cedar St,Metropolis,CA,90012,1,20/07/2024
+31,Ethan,Perez,ethan.perez31@example.com,9012345678,Male,3131 Birch St,San Francisco,CA,94109,2,25/07/2024
+32,Harper,Roberts,harper.roberts32@example.com,123456789,Female,3232 Maple St,Los Angeles,CA,90013,1,1/08/2024
+33,Logan,Evans,logan.evans33@example.com,1234567890,Male,3333 Oak St,Sacramento,CA,94209,2,5/08/2024
+34,Lily,Turner,lily.turner34@example.com,2345678901,Female,3434 Elm St,San Diego,CA,92107,1,10/08/2024
+35,Lucas,Hill,lucas.hill35@example.com,2345678901,Male,3535 Oak St,Metropolis,CA,90014,2,15/08/2024
+36,Aiden,Scott,aiden.scott36@example.com,3456789012,Male,3636 Pine St,Los Angeles,CA,90015,1,20/08/2024
+37,Chloe,Martinez,chloe.martinez37@example.com,4567890123,Female,3737 Cedar St,Sacramento,CA,94210,2,25/08/2024
+38,Jack,Davis,jack.davis38@example.com,5678901234,Male,3838 Birch St,San Diego,CA,92108,1,1/09/2024
+39,Ella,Anderson,ella.anderson39@example.com,6789012345,Female,3939 Maple St,Metropolis,CA,90016,2,5/09/2024
+40,Grayson,Brown,grayson.brown40@example.com,7890123456,Male,4040 Elm St,San Francisco,CA,94110,1,10/09/2024
+41,Layla,White,layla.white41@example.com,8901234567,Female,4141 Pine St,Los Angeles,CA,90017,2,15/09/2024
+42,Sebastian,Thomas,sebastian.thomas42@example.com,9012345678,Male,4242 Cedar St,Sacramento,CA,94211,1,20/09/2024
+43,Maya,King,maya.king43@example.com,123456789,Female,4343 Birch St,San Diego,CA,92109,2,25/09/2024
+44,Nathan,Lewis,nathan.lewis44@example.com,1234567890,Male,4444 Maple St,Metropolis,CA,90018,1,1/10/2024
+45,Aria,Hall,aria.hall45@example.com,2345678901,Female,4545 Elm St,San Francisco,CA,94111,2,5/10/2024
+46,Eli,Walker,eli.walker46@example.com,3456789012,Male,4646 Oak St,Los Angeles,CA,90019,1,10/10/2024
+47,Grace,Harris,grace.harris47@example.com,4567890123,Female,4747 Pine St,Sacramento,CA,94212,2,15/10/2024
+48,Jackson,Clark,jackson.clark48@example.com,5678901234,Male,4848 Cedar St,San Diego,CA,92110,1,20/10/2024
+49,Zoe,Mitchell,zoe.mitchell49@example.com,6789012345,Female,4949 Birch St,Metropolis,CA,90020,2,25/10/2024
+50,Isaac,Adams,isaac.adams50@example.com,7890123456,Male,5050 Maple St,San Francisco,CA,94112,1,1/11/2024

@@ -1,0 +1,159 @@
+Answer to Question number 2:
+
+** Creating Customer nodes from the csv **
+
+LOAD CSV WITH HEADERS FROM 'file:///Customer.csv' AS row
+CREATE (:Customer {
+    Customer_ID: toInteger(row.Customer_ID),
+    First_Name: row.First_Name,
+    Last_Name: row.Last_Name,
+    Email: row.Email,
+    Phone_Number: row.Phone_Number,
+    Gender: row.Gender,
+    Street: row.Street,
+    City: row.City,
+    State: row.State,
+    Postal_Code: row.Postal_Code,
+    Join_Date: row.Join_Date
+});
+
+
+** Creating Order nodes from the csv **
+
+LOAD CSV WITH HEADERS FROM 'file:///Order.csv' AS row
+CREATE (:Order {
+    Order_ID: toInteger(row.Order_ID),
+    Order_Date: row.Order_Date,
+    Order_Status: row.Order_Status
+});
+
+
+** Creating Product nodes from the csv **
+
+LOAD CSV WITH HEADERS FROM 'file:///Product.csv' AS row
+CREATE (:Product {
+    Product_ID: toInteger(row.Product_ID),
+    Product_Name: row.Product_Name,
+    Item_Type: row.Item_Type,
+    Unit_Price: toFloat(row.Unit_Price),
+    Stock_Quantity: toInteger(row.Stock_Quantity),
+    Description: row.Description
+});
+
+
+** Creating Payment nodes from the csv **
+LOAD CSV WITH HEADERS FROM 'file:///Payment.csv' AS row
+CREATE (:Payment {
+    Payment_ID: toInteger(row.Payment_ID),
+    Payment_Method: row.Payment_Method,
+    Payment_Status: row.Payment_Status,
+    Payment_Date: row.Payment_Date
+});
+
+
+** Creating Shipping nodes from the csv **
+LOAD CSV WITH HEADERS FROM 'file:///Shipping.csv' AS row
+CREATE (:Shipping {
+    Shipping_ID: toInteger(row.Shipping_ID),
+    Shipping_Method: row.Shipping_Method,
+    Shipping_Date: row.Shipping_Date,
+    Estimated_Arrival_Date: row.Estimated_Arrival_Date,
+    Shipping_Status: row.Shipping_Status,
+    Carrier_Name: row.Carrier_Name
+});
+
+
+
+** Creating Retrun nodes from the csv **
+LOAD CSV WITH HEADERS FROM 'file:///Return.csv' AS row
+CREATE (:Return {
+    Return_ID: toInteger(row.Return_ID),
+    Return_Date: row.Return_Date,
+    Reason: row.Reason,
+    Return_Status: row.Return_Status,
+    Refund_Amount: toFloat(row.Refund_Amount)
+});
+
+
+** Creating order_details nodes from the csv **
+LOAD CSV WITH HEADERS FROM 'file:///Order_Details.csv' AS row
+CREATE (:Order_Details {
+    Order_ID: toInteger(row.Order_ID),
+    Product_ID: toInteger(row.Product_ID),
+    Quantity: toInteger(row.Quantity),
+    Unit_Price: toFloat(row.Unit_Price)
+});
+
+
+
+
+FOLLOWING CIPHER IS TOMCREAT RELATION IN BETWEEN NODES:::::
+
+** CUSTOMER AND ORDER **
+MATCH (c:Customer), (o:Order)
+WHERE c.Customer_ID = o.Order_ID // Assuming this matching is correct
+CREATE (c)-[:PLACED]->(o);
+
+
+** ORDER AND PRODUCT **
+LOAD CSV WITH HEADERS FROM 'file:///order_details.csv' AS row
+MATCH (o:Order {Order_ID: toInteger(row.Order_ID)}), (p:Product {Product_ID: toInteger(row.Product_ID)})
+CREATE (o)-[:CONTAINS]->(p);
+
+
+
+** PRODUCT AND SUPPLIER **
+LOAD CSV WITH HEADERS FROM 'file:///product.csv' AS row
+MATCH (p:Product {Product_ID: toInteger(row.Product_ID)}), (s:Supplier {Supplier_ID: toInteger(row.Supplier_ID)})
+CREATE (p)-[:IS_SUPPLIED_BY]->(s);
+
+
+
+** ORDER AND PAYMENT **
+LOAD CSV WITH HEADERS FROM 'file:///payment.csv' AS row
+MATCH (o:Order {Order_ID: toInteger(row.Order_ID)}), (p:Payment {Payment_ID: toInteger(row.Payment_ID)})
+CREATE (o)-[:HAS_PAYMENT]->(p);
+
+
+** ORDER AND SHIPPPING **
+LOAD CSV WITH HEADERS FROM 'file:///shipping.csv' AS row
+MATCH (o:Order {Order_ID: toInteger(row.Order_ID)}), (s:Shipping {Shipping_ID: toInteger(row.Shipping_ID)})
+CREATE (o)-[:HAS_SHIPPING]->(s);
+
+
+
+** ORDER AND RETURNS **
+LOAD CSV WITH HEADERS FROM 'file:///returns.csv' AS row
+MATCH (o:Order {Order_ID: toInteger(row.Order_ID)}), (r:Return {Return_ID: toInteger(row.Return_ID)})
+CREATE (o)-[:HAS_RETURN]->(r);
+
+
+** PRODUCT AND RETURNS **
+LOAD CSV WITH HEADERS FROM 'file:///returns.csv' AS row
+MATCH (p:Product {Product_ID: toInteger(row.Product_ID)}), (r:Return {Return_ID: toInteger(row.Return_ID)})
+CREATE (p)-[:IS_RETURNED_IN]->(r);
+
+
+:::CYPHER TO CREATE INDEX:::
+
+1. Create Index on Customer_ID:
+CREATE INDEX customer_id_index IF NOT EXISTS FOR (c:Customer) ON (c.Customer_ID);
+
+2. Create Index on Order_ID:
+CREATE INDEX order_id_index IF NOT EXISTS FOR (o:Order) ON (o.Order_ID);
+
+3. Create Index on Product_ID:
+CREATE INDEX product_id_index IF NOT EXISTS FOR (p:Product) ON (p.Product_ID);
+
+4. Create Index on Supplier_ID:
+CREATE INDEX supplier_id_index IF NOT EXISTS FOR (s:Supplier) ON (s.Supplier_ID);
+
+5. Create Index on Payment_ID:
+CREATE INDEX payment_id_index IF NOT EXISTS FOR (p:Payment) ON (p.Payment_ID);
+
+6. Create Index on Shipping_ID:
+CREATE INDEX shipping_id_index IF NOT EXISTS FOR (s:Shipping) ON (s.Shipping_ID);
+
+7. Create Index on Return_ID:
+CREATE INDEX return_id_index IF NOT EXISTS FOR (r:Return) ON (r.Return_ID);
+
